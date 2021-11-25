@@ -72,7 +72,10 @@ if __name__=='__main__':
     if a>b:
         print("\n   ********comp wins********    ")
         speak(f"oh sorry but comp wins you loss")
-    else:
+    elif a<b:
         print("\n     *******you wins*******      ")
         speak(f"congratulations, you have won the game")
-        speak("thank you")
+    else:
+        print("The Match is draw")
+        speak("due to your and computer score matches the match is draw")
+    speak("thank you ,have a good day,bye")
