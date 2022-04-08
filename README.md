@@ -4,18 +4,18 @@ import datetime
 def wishher():
     hour=int(datetime.datetime.now().hour)
     if hour>=0 and hour<12:
-        speak("good moning yukta")
+        speak("good moning ")
     elif hour>=12 and hour<18:
-        speak("good afernoon yukta")
+        speak("good afernoon")
     else:
-        speak("good evening yukta")
+        speak("good evening")
 def speak(str):
     from win32com.client import Dispatch
     speak=Dispatch("SAPI.SpVoice")
     speak.speak(str)
 if __name__=='__main__':
     wishher()
-    speak("hey yukta, i am piyush, i have designed the game as stone, paper, sesior....")
+    speak("hey user, i am piyush, i have designed the game as stone, paper, sesior....")
     lis=["stone","paper","sesior"]
     print("Welcome stone,paper,sesior GAME")
     time.sleep(2)
